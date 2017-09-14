@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://localhost:4000/lab/tmp/cheatsheet/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title></title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+         /* http://meyerweb.com/eric/tools/css/reset/ 
+         v2.0 | 20110126
+         License: none (public domain)
+         */
+         html, body, div, span, applet, object, iframe,
+         h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+         a, abbr, acronym, address, big, cite, code,
+         del, dfn, em, img, ins, kbd, q, s, samp,
+         small, strike, strong, sub, sup, tt, var,
+         b, u, i, center,
+         dl, dt, dd, ol, ul, li,
+         fieldset, form, label, legend,
+         table, caption, tbody, tfoot, thead, tr, th, td,
+         article, aside, canvas, details, embed, 
+         figure, figcaption, footer, header, hgroup, 
+         menu, nav, output, ruby, section, summary,
+         time, mark, audio, video {
+         margin: 0;
+         padding: 0;
+         border: 0;
+         font-size: 100%;
+         font: inherit;
+         vertical-align: baseline;
+         }
+         /* HTML5 display-role reset for older browsers */
+         article, aside, details, figcaption, figure, 
+         footer, header, hgroup, menu, nav, section {
+         display: block;
+         }
+         body {
+         line-height: 1;
+         }
+         ol, ul {
+         list-style: none;
+         }
+         blockquote, q {
+         quotes: none;
+         }
+         blockquote:before, blockquote:after,
+         q:before, q:after {
+         content: '';
+         content: none;
+         }
+         table {
+         border-collapse: collapse;
+         border-spacing: 0;
+         }
+      </style>
+      <style>
+         body {
+         font-family: sans-serif;
+         color: #333;
+         font-size: 18px;
+         margin-top: 15px;
+         margin-left: 10px;
+         }
+         .c1 {
+         display: flex;
+         }
+         td, th {
+         padding: 5px;
+         }
+         th, td.header {
+         font-weight: bold;
+         text-align: left;
+         background-color: #ffbd24;
+         }
+         .table {
+         /*width: 400px;*/
+         flex-grow: 1;
+         display: block;
+         margin: 10px;
+         }
+         tr:nth-child(even) {
+         background-color: #FFf3d9;
+         }
+         .top {
+         border-bottom: 5px solid #ccc;
+         /*margin-bottom: 5px;*/
+         }
+         .footer {
+         margin-left: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="c1">
+         <div class="table">
+            <table>
+               <thead>
+                  <tr>
+                     <th class="top" colspan="2">_vim</th>
+                  </tr>
+                  <tr>
+                     <th colspan="2">Insertion</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>ace [&lt;n&gt;]    </td>
+                     <td> space (n times)</td>
+                  </tr>
+                  <tr>
+                     <td>tab [&lt;n&gt;]    </td>
+                     <td> tab (n times)</td>
+                  </tr>
+                  <tr>
+                     <td>slap [&lt;n&gt;]   </td>
+                     <td> enter (n times)</td>
+                  </tr>
+                  <tr>
+                     <td>chuck [&lt;n&gt;]  </td>
+                     <td> del (n times)</td>
+                  </tr>
+                  <tr>
+                     <td>scratch [&lt;n&gt;]</td>
+                     <td> backspace (n times)</td>
+                  </tr>
+                  <tr>
+                     <td>ack              </td>
+                     <td> escape</td>
+                  </tr>
+                  <tr>
+                     <th colspan="2">Arithmetic</th>
+                  </tr>
+                  <tr>
+                     <td>assign</td>
+                     <td>=</td>
+                  </tr>
+                  <tr>
+                     <td>compare eek</td>
+                     <td>==</td>
+                  </tr>
+                  <tr>
+                     <td>compare not eek</td>
+                     <td>!= </td>
+                  </tr>
+                  <tr>
+                     <td>compare greater</td>
+                     <td>&gt; </td>
+                  </tr>
+                  <tr>
+                     <td>compare less</td>
+                     <td>&lt; </td>
+                  </tr>
+                  <tr>
+                     <td>compare geck</td>
+                     <td>&gt;= </td>
+                  </tr>
+                  <tr>
+                     <td>compare lack</td>
+                     <td>&lt;= </td>
+                  </tr>
+                  <tr>
+                     <td>bit ore</td>
+                     <td>| </td>
+                  </tr>
+                  <tr>
+                     <td>bit and</td>
+                     <td>&amp; </td>
+                  </tr>
+                  <tr>
+                     <td>bit ex or</td>
+                     <td>^ </td>
+                  </tr>
+                  <tr>
+                     <td>times</td>
+                     <td>* </td>
+                  </tr>
+                  <tr>
+                     <td>divided</td>
+                     <td>/ </td>
+                  </tr>
+                  <tr>
+                     <td>plus</td>
+                     <td>+ </td>
+                  </tr>
+                  <tr>
+                     <td>minus</td>
+                     <td>- </td>
+                  </tr>
+                  <tr>
+                     <td>plus equal</td>
+                     <td>+= </td>
+                  </tr>
+                  <tr>
+                     <td>minus equal</td>
+                     <td>-= </td>
+                  </tr>
+                  <tr>
+                     <td>times equal</td>
+                     <td>*= </td>
+                  </tr>
+                  <tr>
+                     <td>divided equal</td>
+                     <td>/= </td>
+                  </tr>
+                  <tr>
+                     <td>mod equal</td>
+                     <td>%= </td>
+                  </tr>
+                  <tr>
+                     <th colspan="2">Commands</th>
+                  </tr>
+                  <tr>
+                     <td>vim scratch</td>
+                     <td>X</td>
+                  </tr>
+                  <tr>
+                     <td>vim chuck</td>
+                     <td>x</td>
+                  </tr>
+                  <tr>
+                     <td>vim undo</td>
+                     <td>u</td>
+                  </tr>
+                  <tr>
+                     <td>plop</td>
+                     <td>p</td>
+                  </tr>
+                  <tr>
+                     <td>plap</td>
+                     <td>P</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="table">
+            <table>
+               <thead>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>ditto</td>
+                     <td>.</td>
+                  </tr>
+                  <tr>
+                     <td>ripple</td>
+                     <td>macro</td>
+                  </tr>
+                  <tr>
+                     <th colspan="2">CamelCaseMotion</th>
+                  </tr>
+                  <tr>
+                     <td>calalope</td>
+                     <td>,b</td>
+                  </tr>
+                  <tr>
+                     <td>calayope</td>
+                     <td>,w</td>
+                  </tr>
+                  <tr>
+                     <td>end calayope</td>
+                     <td>,e</td>
+                  </tr>
+                  <tr>
+                     <td>inner calalope</td>
+                     <td>i,b</td>
+                  </tr>
+                  <tr>
+                     <td>inner calayope</td>
+                     <td>i,w</td>
+                  </tr>
+                  <tr>
+                     <td>inner end calayope</td>
+                     <td>i,e</td>
+                  </tr>
+                  <tr>
+                     <th colspan="2">EasyMotion*</th>
+                  </tr>
+                  <tr>
+                     <td>easy lope</td>
+                     <td>❟:2, b</td>
+                  </tr>
+                  <tr>
+                     <td>easy yope</td>
+                     <td>❟:2, w</td>
+                  </tr>
+                  <tr>
+                     <td>easy elope</td>
+                     <td>❟:2, g, e</td>
+                  </tr>
+                  <tr>
+                     <td>easy iyope</td>
+                     <td>❟:2, e</td>
+                  </tr>
+                  <tr>
+                     <td>easy lopert</td>
+                     <td>❟:2, B</td>
+                  </tr>
+                  <tr>
+                     <td>easy yopert</td>
+                     <td>❟:2, W</td>
+                  </tr>
+                  <tr>
+                     <td>easy elopert</td>
+                     <td>❟:2,&nbsp;g,&nbsp;E</td>
+                  </tr>
+                  <tr>
+                     <td>easy eyopert</td>
+                     <td>❟:2, E</td>
+                  </tr>
+                  <tr>
+                     <th colspan="2">Operators</th>
+                  </tr>
+                  <tr>
+                     <td>relo</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>dell</td>
+                     <td>d</td>
+                  </tr>
+                  <tr>
+                     <td>chaos</td>
+                     <td>c</td>
+                  </tr>
+                  <tr>
+                     <td>nab</td>
+                     <td>y</td>
+                  </tr>
+                  <tr>
+                     <td>swap case</td>
+                     <td>g~</td>
+                  </tr>
+                  <tr>
+                     <td>uppercase</td>
+                     <td>gU</td>
+                  </tr>
+                  <tr>
+                     <td>lowercase</td>
+                     <td>gu</td>
+                  </tr>
+                  <tr>
+                     <td>external filter</td>
+                     <td>!</td>
+                  </tr>
+                  <tr>
+                     <td>external format</td>
+                     <td>=</td>
+                  </tr>
+                  <tr>
+                     <td>format text</td>
+                     <td>gq</td>
+                  </tr>
+                  <tr>
+                     <td>rotate thirteen</td>
+                     <td>g?</td>
+                  </tr>
+                  <tr>
+                     <td>indent left</td>
+                     <td>&lt;</td>
+                  </tr>
+                  <tr>
+                     <td>indent right</td>
+                     <td>&gt;</td>
+                  </tr>
+                  <tr>
+                     <td>define fold</td>
+                     <td>zf</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="table">
+            <table>
+               <thead>
+                  <tr>
+                     <th colspan="2">
+                        Motion
+                     </th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>up</td>
+                     <td>k</td>
+                  </tr>
+                  <tr>
+                     <td>down</td>
+                     <td>j</td>
+                  </tr>
+                  <tr>
+                     <td>left</td>
+                     <td>h</td>
+                  </tr>
+                  <tr>
+                     <td>right</td>
+                     <td>l</td>
+                  </tr>
+                  <tr>
+                     <td>lope</td>
+                     <td>b</td>
+                  </tr>
+                  <tr>
+                     <td>yope</td>
+                     <td>w</td>
+                  </tr>
+                  <tr>
+                     <td>elope</td>
+                     <td>ge</td>
+                  </tr>
+                  <tr>
+                     <td>iyope</td>
+                     <td>e</td>
+                  </tr>
+                  <tr>
+                     <td>lopert</td>
+                     <td>B</td>
+                  </tr>
+                  <tr>
+                     <td>yopert</td>
+                     <td>W</td>
+                  </tr>
+                  <tr>
+                     <td>elopert</td>
+                     <td>gE</td>
+                  </tr>
+                  <tr>
+                     <td>eyopert</td>
+                     <td>E</td>
+                  </tr>
+                  <tr>
+                     <td>apla</td>
+                     <td>{</td>
+                  </tr>
+                  <tr>
+                     <td>anla</td>
+                     <td>}</td>
+                  </tr>
+                  <tr>
+                     <td>sapla</td>
+                     <td>(</td>
+                  </tr>
+                  <tr>
+                     <td>sanla</td>
+                     <td>)</td>
+                  </tr>
+                  <tr>
+                     <td>care</td>
+                     <td>^</td>
+                  </tr>
+                  <tr>
+                     <td>hard care</td>
+                     <td>0</td>
+                  </tr>
+                  <tr>
+                     <td>doll</td>
+                     <td>$</td>
+                  </tr>
+                  <tr>
+                     <td>screecare</td>
+                     <td>g^</td>
+                  </tr>
+                  <tr>
+                     <td>screedoll</td>
+                     <td>g$</td>
+                  </tr>
+                  <tr>
+                     <td>scree up</td>
+                     <td>gk</td>
+                  </tr>
+                  <tr>
+                     <td>scree down</td>
+                     <td>gj</td>
+                  </tr>
+                  <tr>
+                     <td>wynac</td>
+                     <td>G</td>
+                  </tr>
+                  <tr>
+                     <td>wynac top</td>
+                     <td>H</td>
+                  </tr>
+                  <tr>
+                     <td>wynac toe</td>
+                     <td>L</td>
+                  </tr>
+                  <tr>
+                     <td>tect</td>
+                     <td>%</td>
+                  </tr>
+                  <tr>
+                     <td>matu</td>
+                     <td>M</td>
+                  </tr>
+                  <tr>
+                     <td>phytic</td>
+                     <td>f</td>
+                  </tr>
+                  <tr>
+                     <td>fitton</td>
+                     <td>F</td>
+                  </tr>
+                  <tr>
+                     <td>pre phytic</td>
+                     <td>t</td>
+                  </tr>
+                  <tr>
+                     <td>pre fitton</td>
+                     <td>T</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <p class="footer">* comma symbol (❟) indicates leader key</p>
+   
+</body></html>
