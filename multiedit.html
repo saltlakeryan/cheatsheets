@@ -103,22 +103,55 @@
                   </tr>
                </thead>
                <tbody>
-<tr><td>up [<n>]</td><td>up (n times)</td></tr>
-<tr><td>down [<n>]</td><td>down (n times)</td></tr>
-<tr><td>left [<n>]</td><td>left (n times)</td></tr>
-<tr><td>right [<n>]</td><td>right (n times)</td></tr>
-<tr><td>gope [<n>]</td><td>pgup (n times)</td></tr>
-<tr><td>drop [<n>]</td><td>pgdown (n times)</td></tr>
-<tr><td>lope [<n>]</td><td>c-left (n times)</td></tr>
-<tr><td>yope [<n>]</td><td>c-right (n times)</td></tr>
+<tr><td>up [&lt;n&gt;]</td><td>up (n times)</td></tr>
+<tr><td>down [&lt;n&gt;]</td><td>down (n times)</td></tr>
+<tr><td>left [&lt;n&gt;]</td><td>left (n times)</td></tr>
+<tr><td>right [&lt;n&gt;]</td><td>right (n times)</td></tr>
+<tr><td>gope [&lt;n&gt;]</td><td>pgup (n times)</td></tr>
+<tr><td>drop [&lt;n&gt;]</td><td>pgdown (n times)</td></tr>
+<tr><td>lope [&lt;n&gt;]</td><td>c-left (n times)</td></tr>
+<tr><td>yope [&lt;n&gt;]</td><td>c-right (n times)</td></tr>
 <tr><td>care</td><td>home</td></tr>
 <tr><td>doll</td><td>end</td></tr>
 <tr><td>file top</td><td>c-home</td></tr>
 <tr><td>file toe</td><td>c-end</td></tr>
+
+<tr><td class="header" colspan="2">Special Keys</td></tr>
+<tr><td>ace [&lt;n&gt;]</td><td>space (n times)</td></tr>
+<tr><td>act</td><td>escape</td></tr>
+<tr><td>chuck [&lt;n&gt;]</td><td>del (n times)</td></tr>
+<tr><td>scratch [&lt;n&gt;]</td><td>backspace (n times)</td></tr>
+<tr><td>slap [&lt;n&gt;]</td><td>enter (n times)</td></tr>
+<tr><td>tab [&lt;n&gt;]</td><td>tab (n times)</td></tr>
+
+
+<tr><td class="header" colspan="2">Lines</td></tr>
+<tr><td>line down [&lt;n&gt;]</td><td>move line down (via cut/paste)</td></tr>
+<tr><td>lineup [&lt;n&gt;]</td><td>move line up</td></tr>
+<tr><td>nab [&lt;n&gt;]</td><td>copy line(s)</td></tr>
+<tr><td>plop [&lt;n&gt;]</td><td>paste (n times)</td></tr>
+<tr><td>squishy [&lt;n&gt;]</td><td>combine with next line</td></tr>
+<tr><td>strip</td><td>delete to EOL</td></tr>
+<tr><td>striss</td><td>delete to BOL</td></tr>
+<tr><td>trance [&lt;n&gt;]</td><td>?</td></tr>
+<tr><td>wipe [&lt;n&gt;]</td><td>??</td></tr>
+
+<tr><td class="header" colspan="2">Words</td></tr>
+<tr><td>bump [&lt;n&gt;]</td><td>delete word(s) to right</td></tr>
+<tr><td>whack [&lt;n&gt;]</td><td>delete word(s) to left</td></tr>
+
+
+
                </tbody>
             </table>
          </div>
       </div>
-      <p class="footer">* comma symbol (❟) indicates leader key</p>
+      <p class="footer">
+          Word Formatting: [upper | natural] ( proper | camel | rel-path | abs-path | score | sentence | '
+            'scope-resolve | jumble | dotword | dashword | natword | snakeword | brooding-narrative) [&lt;dictation&gt;]
+            <br/>
+            ?: definition is <b>home:2, shift:down, down (n times), up, end:2, shift:up, c-c, end:2, enter, c-v</b><br/>
+            ??: definition is <b>home:2, shift:down, down (n times), up, end:2, del, shift:up, backspace</b>
+      </p>
    </body>
 </html>
