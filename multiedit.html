@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+         /* http://meyerweb.com/eric/tools/css/reset/ 
+         v2.0 | 20110126
+         License: none (public domain)
+         */
+         html, body, div, span, applet, object, iframe,
+         h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+         a, abbr, acronym, address, big, cite, code,
+         del, dfn, em, img, ins, kbd, q, s, samp,
+         small, strike, strong, sub, sup, tt, var,
+         b, u, i, center,
+         dl, dt, dd, ol, ul, li,
+         fieldset, form, label, legend,
+         table, caption, tbody, tfoot, thead, tr, th, td,
+         article, aside, canvas, details, embed, 
+         figure, figcaption, footer, header, hgroup, 
+         menu, nav, output, ruby, section, summary,
+         time, mark, audio, video {
+         margin: 0;
+         padding: 0;
+         border: 0;
+         font-size: 100%;
+         font: inherit;
+         vertical-align: baseline;
+         }
+         /* HTML5 display-role reset for older browsers */
+         article, aside, details, figcaption, figure, 
+         footer, header, hgroup, menu, nav, section {
+         display: block;
+         }
+         body {
+         line-height: 1;
+         }
+         ol, ul {
+         list-style: none;
+         }
+         blockquote, q {
+         quotes: none;
+         }
+         blockquote:before, blockquote:after,
+         q:before, q:after {
+         content: '';
+         content: none;
+         }
+         table {
+         border-collapse: collapse;
+         border-spacing: 0;
+         }
+      </style>
+      <style>
+         body {
+         font-family: sans-serif;
+         color: #333;
+         font-size: 18px;
+         margin-top: 15px;
+         margin-left: 10px;
+         }
+         .c1 {
+         display: flex;
+         }
+         td, th {
+         padding: 5px;
+         }
+         th, td.header {
+         font-weight: bold;
+         text-align: left;
+         background-color: #ffbd24;
+         }
+         .table {
+         /*width: 400px;*/
+         flex-grow: 1;
+         display: block;
+         margin: 10px;
+         }
+         tr:nth-child(even) {
+         background-color: #FFf3d9;
+         }
+         .top {
+         border-bottom: 5px solid #ccc;
+         /*margin-bottom: 5px;*/
+         }
+         .footer {
+         margin-left: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="c1">
+         <div class="table">
+            <table>
+               <thead>
+                  <tr>
+                     <th class="top" colspan="2">_multiedit</th>
+                  </tr>
+                  <tr>
+                     <th colspan="2">Cursor</th>
+                  </tr>
+               </thead>
+               <tbody>
+<tr><td>up [<n>]</td><td>up (n times)</td></tr>
+<tr><td>down [<n>]</td><td>down (n times)</td></tr>
+<tr><td>left [<n>]</td><td>left (n times)</td></tr>
+<tr><td>right [<n>]</td><td>right (n times)</td></tr>
+<tr><td>gope [<n>]</td><td>pgup (n times)</td></tr>
+<tr><td>drop [<n>]</td><td>pgdown (n times)</td></tr>
+<tr><td>lope [<n>]</td><td>c-left (n times)</td></tr>
+<tr><td>yope [<n>]</td><td>c-right (n times)</td></tr>
+<tr><td>care</td><td>home</td></tr>
+<tr><td>doll</td><td>end</td></tr>
+<tr><td>file top</td><td>c-home</td></tr>
+<tr><td>file toe</td><td>c-end</td></tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <p class="footer">* comma symbol (❟) indicates leader key</p>
+   </body>
+</html>
